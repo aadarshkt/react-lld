@@ -9,7 +9,7 @@ function App() {
     if (!input.trim()) return;
 
     setSuggestions((prev) => {
-      if (prev.length === 3) {
+      if (prev.length === 4) {
         prev.pop();
       }
       return [input, ...prev];
